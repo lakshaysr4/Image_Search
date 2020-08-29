@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#1b1b1b">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/flickr"
+                android:layout_weight="2"
+                android:src="@drawable/flickr_wbg"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#a4a4a4"
+                    android:drawableLeft="@drawable/ic_baseline_search_24"
+                    android:background="@drawable/round_edit_text"
+                    android:paddingRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif"
+                    android:hint="Search for Images"
+                    android:paddingLeft="30dp" />
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/btn_go"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginRight="150dp"
+                    fancy:fb_borderColor="#FFFFFF"
+                    fancy:fb_borderWidth="1dp"
+                    fancy:fb_defaultColor="#042f66"
+                    fancy:fb_focusColor="#042f66"
+                    android:gravity="center_horizontal"
+                    fancy:fb_iconPosition="left"
+                    fancy:fb_radius="5dp"
+                    fancy:fb_text="GO"
+                    fancy:fb_textColor="#FFFFFF" />
+
+            </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>
